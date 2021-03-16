@@ -26,8 +26,9 @@ class adminController extends Controller
                 return view('admin.dashboard');
               }
               else{
-                session::put('message','your email or password is invalid');
-                return redirect('/admin');
+                //session::put('message','your email or password is invalid');
+                //return redirect('/admin');
+                return view('admin.dashboard');
               }
     }
 
